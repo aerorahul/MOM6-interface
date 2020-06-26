@@ -4,7 +4,7 @@ find_package(NetCDF REQUIRED Fortran)
 find_package(ESMF MODULE REQUIRED)
 
 if(OPENMP)
-  find_package(OpenMP REQUIRE COMPONENTS Fortran)
+  find_package(OpenMP REQUIRED COMPONENTS Fortran)
 endif()
 
 # MOM6 src, config_src file and include files and directories
