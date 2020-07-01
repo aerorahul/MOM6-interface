@@ -41,8 +41,10 @@ add_library(${libName}::${libName} ALIAS ${libName})
 set_target_properties(${libName} PROPERTIES Fortran_MODULE_DIRECTORY
                                             ${moduleDir})
 
+target_compile_definitions(${libName} PRIVATE -DESMF_VERSION_MAJOR=${ESMF_VERSION_MAJOR})
+target_include_directories(${libName} PRIVATE ${ESMF_MOD})
+
 target_link_libraries(${libName} PUBLIC mom6::mom6
-                                        esmf
                                         fms::fms_8
                                         NetCDF::NetCDF_Fortran)
 

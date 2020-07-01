@@ -169,16 +169,16 @@ list(APPEND mom6_src_files
   MOM6/src/parameterizations/vertical/MOM_tidal_mixing.F90
   MOM6/src/parameterizations/vertical/MOM_vert_friction.F90
 
-  MOM6/src/parameterizations/CVMix/cvmix_background.F90
-  MOM6/src/parameterizations/CVMix/cvmix_convection.F90
-  MOM6/src/parameterizations/CVMix/cvmix_ddiff.F90
-  MOM6/src/parameterizations/CVMix/cvmix_kinds_and_types.F90
-  MOM6/src/parameterizations/CVMix/cvmix_kpp.F90
-  MOM6/src/parameterizations/CVMix/cvmix_math.F90
-  MOM6/src/parameterizations/CVMix/cvmix_put_get.F90
-  MOM6/src/parameterizations/CVMix/cvmix_shear.F90
-  MOM6/src/parameterizations/CVMix/cvmix_tidal.F90
-  MOM6/src/parameterizations/CVMix/cvmix_utils.F90
+  MOM6/src/parameterizations/CVmix/cvmix_background.F90
+  MOM6/src/parameterizations/CVmix/cvmix_convection.F90
+  MOM6/src/parameterizations/CVmix/cvmix_ddiff.F90
+  MOM6/src/parameterizations/CVmix/cvmix_kinds_and_types.F90
+  MOM6/src/parameterizations/CVmix/cvmix_kpp.F90
+  MOM6/src/parameterizations/CVmix/cvmix_math.F90
+  MOM6/src/parameterizations/CVmix/cvmix_put_get.F90
+  MOM6/src/parameterizations/CVmix/cvmix_shear.F90
+  MOM6/src/parameterizations/CVmix/cvmix_tidal.F90
+  MOM6/src/parameterizations/CVmix/cvmix_utils.F90
 
   MOM6/src/tracer/DOME_tracer.F90
 
