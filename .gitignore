@@ -1,9 +1,10 @@
-**/*.o
-*.o
-**/*.mod
+*/*.mod
 *.mod
-*.a
-build
+*.[aox]
+*/*.[aox]
+build*/
+install*/
 exec
 MOM6_INSTALL
-
+*.swp
+*~

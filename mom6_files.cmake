@@ -136,8 +136,6 @@ list(APPEND mom6_src_files
 
   MOM6/src/initialization/midas_vertmap.F90
 
-  MOM6/src/ocean_data_assim/MOM_oda_driver.F90
-
   MOM6/src/parameterizations/lateral/MOM_MEKE.F90
   MOM6/src/parameterizations/lateral/MOM_MEKE_types.F90
   MOM6/src/parameterizations/lateral/MOM_hor_visc.F90
@@ -171,6 +169,17 @@ list(APPEND mom6_src_files
   MOM6/src/parameterizations/vertical/MOM_tidal_mixing.F90
   MOM6/src/parameterizations/vertical/MOM_vert_friction.F90
 
+  MOM6/src/parameterizations/CVMix/cvmix_background.F90
+  MOM6/src/parameterizations/CVMix/cvmix_convection.F90
+  MOM6/src/parameterizations/CVMix/cvmix_ddiff.F90
+  MOM6/src/parameterizations/CVMix/cvmix_kinds_and_types.F90
+  MOM6/src/parameterizations/CVMix/cvmix_kpp.F90
+  MOM6/src/parameterizations/CVMix/cvmix_math.F90
+  MOM6/src/parameterizations/CVMix/cvmix_put_get.F90
+  MOM6/src/parameterizations/CVMix/cvmix_shear.F90
+  MOM6/src/parameterizations/CVMix/cvmix_tidal.F90
+  MOM6/src/parameterizations/CVMix/cvmix_utils.F90
+
   MOM6/src/tracer/DOME_tracer.F90
 
   MOM6/src/tracer/ISOMIP_tracer.F90
@@ -178,7 +187,8 @@ list(APPEND mom6_src_files
   MOM6/src/tracer/MOM_OCMIP2_CFC.F90
   MOM6/src/tracer/MOM_generic_tracer.F90
   MOM6/src/tracer/MOM_lateral_boundary_diffusion.F90
-  MOM6/src/tracer/MOM_neutral_diffusion.F90;src/MOM6/src/tracer/MOM_offline_aux.F90
+  MOM6/src/tracer/MOM_neutral_diffusion.F90
+  MOM6/src/tracer/MOM_offline_aux.F90
   MOM6/src/tracer/MOM_offline_main.F90
   MOM6/src/tracer/MOM_tracer_Z_init.F90
   MOM6/src/tracer/MOM_tracer_advect.F90
@@ -231,22 +241,12 @@ list(APPEND mom6_src_files
   MOM6/src/user/user_initialization.F90
   MOM6/src/user/user_revise_forcing.F90
 
-  MOM6/pkg/CVMix-src/src/shared/cvmix_background.F90
-  MOM6/pkg/CVMix-src/src/shared/cvmix_convection.F90
-  MOM6/pkg/CVMix-src/src/shared/cvmix_ddiff.F90
-  MOM6/pkg/CVMix-src/src/shared/cvmix_kinds_and_types.F90
-  MOM6/pkg/CVMix-src/src/shared/cvmix_kpp.F90
-  MOM6/pkg/CVMix-src/src/shared/cvmix_math.F90
-  MOM6/pkg/CVMix-src/src/shared/cvmix_put_get.F90
-  MOM6/pkg/CVMix-src/src/shared/cvmix_shear.F90
-  MOM6/pkg/CVMix-src/src/shared/cvmix_tidal.F90
-  MOM6/pkg/CVMix-src/src/shared/cvmix_utils.F90
+  MOM6/src/ocean_data_assim/MOM_oda_driver.F90
+  MOM6/src/ocean_data_assim/core/ocean_da_core.F90
+  MOM6/src/ocean_data_assim/core/ocean_da_types.F90
+  MOM6/src/ocean_data_assim/core/write_ocean_obs.F90
 
-  MOM6/pkg/geoKdTree/kdtree.f90
-
-  MOM6/pkg/MOM6_DA_hooks/src/core/ocean_da_core.F90
-  MOM6/pkg/MOM6_DA_hooks/src/core/ocean_da_types.F90
-  MOM6/pkg/MOM6_DA_hooks/src/core/write_ocean_obs.F90
+  MOM6/src/ocean_data_assim/geoKdTree/kdtree.f90
 )
 
 list(APPEND mom6_config_src_files
