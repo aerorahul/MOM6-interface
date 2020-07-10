@@ -1,5 +1,5 @@
 # MOM6 src, config_src file and include files and directories
-include(mom6_files.cmake)
+include("mom6_files.cmake")
 
 ### Build MOM6 library
 set(libName "mom6")
